@@ -1,0 +1,8 @@
+<h1>Movies</h1>
+<ul>
+  <% all_movies = Movie.read %>
+  <% all_movies.each do |flick|%>
+    <li><%= flick["title"] %>
+    (<%= flick["year"] %>)</li>
+    <% end %>
+</ul>
